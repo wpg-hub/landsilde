@@ -1,0 +1,5 @@
+tas_ip: https://10.217.8.237:8181
+user: sms
+password: a1b2c3d4
+library_name: sms/kiwi
+case_name: DUPF167-1500pps-4w-TS1

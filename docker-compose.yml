@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  landslide-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: landslide-worker:latest
+    container_name: landslide-worker
+    restart: always
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - ./config.json:/app/config.json:ro
+      - ./logs:/app/logs
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"

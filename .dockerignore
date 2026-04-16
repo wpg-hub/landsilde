@@ -1,0 +1,10 @@
+logs/
+*.log
+*.txt
+!config.yaml
+!config.json
+__pycache__/
+*.pyc
+.git/
+.gitignore
+*.md
